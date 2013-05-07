@@ -1,0 +1,399 @@
+<head>
+	<title>Create a Deal|Glider</title>
+</head>
+
+<div class="expander">
+	<div id="subheader" class="subheader">
+	<div class="subheader" id="subheader">
+      <div class="container">
+        <div class="fixer">
+          <a class="btn btn-primary btn-back" href="/gold">Deals</a>
+        </div>
+        <div data-block="page_title" class="page-title light">
+          Create a Deal
+        </div>
+      </div>
+    </div>
+	</div>
+
+	<div id="page" class="page">
+		<h1>Deals#new</h1>
+		<p>Find me in app/views/deals/new.html.erb</p>
+		<div class="container gutter">
+  <!-- Messages -->
+  <div class="row">
+    <div class="span12 messages gutter-both" id="messages">
+    
+      
+
+
+    
+    </div>
+  </div>
+  <!-- /Messages -->
+
+  <!-- Content -->
+  <div class="base" id="content">
+  
+
+<div data-tpl-template="dealer/deal-builder" id="deal-builder"><form class="form" id="deal-builder-form">
+    <div class="row">
+      <div class="span2 deal-builder-sidebar">
+        <h3>Step 1</h3>
+        <h4>Select Company</h4>
+      </div>
+      <div class="span10">
+        <div style="display:none"><input type="hidden" value="x383a6sQQge87azPGoIYLyzGweuoIIlb" name="csrfmiddlewaretoken"></div>
+        <div class="controls controls-row deal-builder-name-controls clearfix">
+          <div class="select2-container span5 input-company" id="s2id_autogen1"><a tabindex="-1" class="select2-choice select2-default" onclick="return false;" href="javascript:void(0)">   <span>Select existing company</span><abbr style="display:none;" class="select2-search-choice-close"></abbr>   <div><b></b></div></a><input type="text" class="select2-focusser select2-offscreen"><div style="display:none" class="select2-drop select2-with-searchbox">   <div class="select2-search">       <input type="text" class="select2-input" autocomplete="off">   </div>   <ul class="select2-results">   </ul></div></div><input type="hidden" required="" data-bind-company-id="deal.company" autocomplete="off" placeholder="Select existing company" value="" name="deal.company" class="span5 input-company select2-offscreen" tabindex="-1">
+          <span>Or</span>
+          <a data-bind="" data-toggle="modal" class="btn btn-primary btn-large btn-company">Add Company</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span2 deal-builder-sidebar">
+        <h3>Step 2</h3>
+        <h4>Name The Deal</h4>
+      </div>
+      <div class="span10">
+        <div class="controls controls-row deal-builder-name-controls clearfix">
+          <input type="text" required="" placeholder="Deal Name" name="deal.name" class="span5" id="deal_name">
+        </div>
+      </div>
+    </div>
+    <div class="row workflow-row">
+      <div class="span2 deal-builder-sidebar">
+        <h3>Step 3</h3>
+        <h4>Add Steps</h4>
+      </div>
+      <div class="span2 workflow-menu-bar">
+        <ul data-tpl-template="dealer/workflow-menu" class="unstyled workflow-menu" style="top: 0px;"><li class="workflow-item"><div data-tpl-template="dealer/chiclet-document-create" data-step-type="document-create" class="workflow-element workflow-document-create ui-draggable"><div class="workflow-element-inner"><p data-icon="a" class="pictos workflow-element-icon"></p><p class="workflow-element-name">Upload a Document</p></div></div></li><li class="workflow-item"><div data-tpl-template="dealer/chiclet-document-request" data-step-type="document-request" class="workflow-element workflow-document-request ui-draggable"><div class="workflow-element-inner"><p data-icon="r" class="pictos workflow-element-icon"></p><p class="workflow-element-name">Request a Document</p></div></div></li><li class="workflow-item"><div data-tpl-template="dealer/chiclet-approval" data-step-type="approval" class="workflow-element workflow-approval ui-draggable ui-draggable-disabled ui-state-disabled" aria-disabled="true"><div class="workflow-element-inner"><p data-icon="c" class="pictos workflow-element-icon"></p><p class="workflow-element-name">Get Approval</p></div></div></li><li class="workflow-item"><div data-tpl-template="dealer/chiclet-signature" data-step-type="signature" class="workflow-element workflow-signature ui-draggable ui-draggable-disabled ui-state-disabled" aria-disabled="true"><div class="workflow-element-inner"><p data-icon="s" class="pictos workflow-element-icon"></p><p class="workflow-element-name">Get a Signature</p></div></div></li></ul><div class="arrows"></div>
+      </div>
+      <div class="span8 deal-builder-workflow">
+        <div class="workflow-selection">
+          <div class="workflow-items"></div>
+          <div class="empty-item"><div class="row workflow-item clearfix">
+    <div class="chiclet">
+      <div class="workflow-droptarget ui-droppable">
+        <div class="workflow-element-inner">
+          <p class="pictos workflow-element-name">Drag a <br>step here</p>
+        </div>
+      </div>
+    </div>
+    <div class="workflow-form">
+	    <div class="form-actions workflow-actions">
+	    </div>
+    </div>
+  </div></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span2 deal-builder-sidebar">
+        <h3>Step 4</h3>
+        <h4>Create The Deal</h4>
+      </div>
+      <div class="span10 workflow-form">
+        <div class="form-actions workflow-actions">
+          <button class="btn btn-primary btn-large workflow-save disabled" disabled="disabled">Create This Deal</button>
+        </div>
+      </div>
+    </div>
+  </form><div class="tpl-templates" type="text/html">
+    <div data-step-type="document-request" data-tpl-template="dealer/document-request-form" class="workflow-step-form workflow-step-upload top-left-arrow">
+  <div class="title">
+    <h3 class="light">Request a document</h3>
+  </div>
+
+  <div class="form_elements">
+    <input type="hidden" data-bind-user-id="step.who" value="LVTemnjyxSQJlTzorJgDpOhXqHNZUt" name="who">
+    <fieldset>
+      <label for="doc_name" class="light">I need</label>
+      <input type="text" required="" data-bind-value="step.doc_name" placeholder="What document do you need?" name="doc_name" id="doc_name">
+    </fieldset>
+
+    <fieldset>
+      <label for="responsible" class="light">from</label>
+      <div class="input-invite">
+        <input type="hidden" required="" data-bind-user-id="step.responsible" autocomplete="off" placeholder="Who do you need it from?" value="" name="responsible" class="input-person">
+        <span>OR</span>
+        <a data-toggle="modal" class="btn btn-primary btn-large btn-invite">Invite</a>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="deadline" class="light">by</label>
+      <div data-date-format="mm/dd/yyyy" data-date="" class="input-append input-date date">
+        <input type="text" data-bind-date="step.deadline" placeholder="MM/DD/YYYY" name="deadline" id="deadline">
+        <span class="add-on"><i class="icon-calendar"></i></span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="notes" class="light">Notes</label>
+      <textarea data-bind-value="step.notes" placeholder="Notes" name="notes"></textarea>
+    </fieldset>
+
+    <div class="form-actions">
+      <a class="btn btn-large delete">Delete Step</a>
+      <button class="btn btn-primary btn-large save">Save Progress</button>
+    </div>
+  </div>
+</div>
+
+
+
+    
+
+<div data-step-type="document-create" data-tpl-template="dealer/document-create-form" class="workflow-step-form workflow-step-create top-left-arrow">
+  <div class="title">
+    <h3>Upload a Document</h3>
+  </div>
+
+  <div class="form_elements">
+    <input type="hidden" data-bind-user-id="step.who" value="LVTemnjyxSQJlTzorJgDpOhXqHNZUt" name="who">
+    <fieldset>
+      <label for="doc_name" class="light">I am uploading the</label>
+      <div class="doc-input clearfix">
+        <input data-fp-button-text="Choose file" data-fp-button-class="btn btn-primary btn-large btn-pick" data-fp-signature="ff86820cea760fd43f7ba3cccc021575623448ca5db2529f8f46105ca105b01f" data-fp-policy="eyJjYWxsIjogWyJjYWxsIiwgInJlYWQiLCAicGljayIsICJzdG9yZSJdLCAiZXhwaXJ5IjogIjEzNjc3MDg4OTUifQ==" data-fp-mimetypes="*/*" data-fp-services="COMPUTER,GOOGLE_DRIVE,DROPBOX,BOX,GMAIL,URL" data-fp-apikey="AnARjnG0mTN6wN1hVl9mrz" data-fp-multiple="false" name="doc_file">
+        <span>AND</span>
+        <input type="text" required="" data-bind-value="step.doc_name" placeholder="Name the document" value="" name="doc_name" id="doc_name">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="notes" class="light">Notes</label>
+      <textarea data-bind-value="step.notes" placeholder="Notes" name="notes"></textarea>
+    </fieldset>
+
+    <div class="form-actions">
+      <a class="btn btn-large delete">Delete Step</a>
+      <button class="btn btn-primary btn-large save">Save Progress</button>
+    </div>
+  </div>
+</div>
+
+    <div data-step-type="approval" data-tpl-template="dealer/approval-form" class="workflow-step-form workflow-step-approval top-left-arrow">
+  <div class="title">
+    <h3>Get Approval</h3>
+  </div>
+
+  <div class="form_elements">
+    <input type="hidden" data-bind-user-id="step.who" value="LVTemnjyxSQJlTzorJgDpOhXqHNZUt" name="who">
+    <fieldset>
+      <label for="doc_name" class="light">I need</label>
+      <input type="hidden" required="" data-bind-value="step.doc_name" placeholder="What document needs approval?" name="doc_name" id="doc_name">
+    </fieldset>
+
+    <fieldset>
+      <label for="responsible_list" class="light">Approved by</label>
+      <div class="input-invite">
+        <input type="hidden" required="" data-bind-user-ids="step.responsible_list" placeholder="Who needs to approve it?" value="" name="responsible_list" class="input-people">
+        <span>OR</span>
+        <a data-bind="" data-toggle="modal" class="btn btn-primary btn-large btn-invite">Invite</a>
+      </div>
+    </fieldset>
+    
+    <fieldset>
+      <label for="deadline" class="light">by</label>
+      <div data-date-format="mm/dd/yyyy" data-date="" class="input-append input-date date">
+        <input type="text" data-bind-date="step.deadline" placeholder="MM/DD/YYYY" name="deadline" id="deadline">
+        <span class="add-on"><i class="icon-calendar"></i></span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="notes" class="light">Notes</label>
+      <textarea data-bind-value="step.notes" placeholder="Notes" name="notes"></textarea>
+    </fieldset>
+
+    <div class="form-actions">
+      <a class="btn btn-large delete">Delete Step</a>
+      <button class="btn btn-primary btn-large save">Save Progress</button>
+    </div>
+  </div>
+</div>
+
+    <div data-step-type="signature" data-tpl-template="dealer/signature-form" class="workflow-step-form workflow-step-signature top-left-arrow">
+  <div class="title">
+    <h3>Get a Signature</h3>
+  </div>
+
+  <div class="form_elements">
+    <input type="hidden" data-bind-user-id="step.who" value="LVTemnjyxSQJlTzorJgDpOhXqHNZUt" name="who">
+    <fieldset>
+      <label for="doc_name" class="light">I need</label>
+      <input type="hidden" required="" data-bind-value="step.doc_name" placeholder="What document do you need signed?" name="doc_name" id="doc_name">
+    </fieldset>
+
+    <fieldset>
+      <label for="signature">Signed by</label>
+      <div class="input-invite">
+        <input type="hidden" required="" data-bind-user-ids="step.responsible_list" placeholder="Who needs to sign it?" value="" name="responsible_list" class="input-people">
+        <span>OR</span>
+        <a data-toggle="modal" class="btn btn-primary btn-large btn-invite">Invite</a>
+      </div>
+    </fieldset>
+    
+    <fieldset>
+      <label for="deadline" class="light">by</label>
+      <div data-date-format="mm/dd/yyyy" data-date="" class="input-append input-date date">
+        <input type="text" data-bind-date="step.deadline" placeholder="MM/DD/YYYY" name="deadline" id="deadline">
+        <span class="add-on"><i class="icon-calendar"></i></span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="notes" class="light">Notes</label>
+      <textarea data-bind-value="step.notes" placeholder="Notes" name="notes"></textarea>
+    </fieldset>
+
+    <div class="form-actions">
+      <a class="btn btn-large delete">Delete Step</a>
+      <button class="btn btn-primary btn-large save">Save Progress</button>
+    </div>
+  </div>
+</div>
+
+    <div data-tpl-template="dealer/invite-form" class="dialog dialog-dealer-invite">
+  <div class="modal-header">
+    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+    <h3>Add A New Contact</h3>
+  </div>
+  <div class="modal-body">
+
+    <div class="messages"></div>
+
+    <form>
+        <div class="control-group" id="div_id_first_name">
+            <label for="first_name">First Name</label>
+            <div class="controls">
+                <input type="text" required="" maxlength="30" placeholder="First Name" name="first_name">
+            </div>
+        </div>
+
+        <div class="control-group" id="div_id_last_name">
+            <label for="last_name">Last Name</label>
+            <div class="controls">
+                <input type="text" required="" maxlength="30" placeholder="Last Name" name="last_name">
+            </div>
+        </div>
+
+        <div class="control-group" id="div_id_email_address">
+            <label for="email">Email Address</label>
+            <div class="controls">
+                <input type="text" required="" placeholder="Email Address" name="email">
+            </div>
+        </div>
+
+        <section class="role-select">
+            <div class="control-group" id="div_id_membership_level">
+                <div class="controls">
+                    <label class="radio">
+                        <input type="radio" value="LI" name="access_level">
+                        Collaborator
+                    </label>
+                    <label class="radio">
+                        <input type="radio" checked="" value="EX" name="access_level">
+                        External Party
+                    </label>
+                </div>
+            </div>
+            <aside>
+            <p class="hidden" data-access-level="LI"><span class="internal">Collaborators</span> are generally people inside your company. They can view all of the deal details, activity, comments, and documents for the deal.</p>
+            <p data-access-level="EX"><span class="external">External Parties</span> are generally people outside of your company. They can not view deal details, activity, or comments. They can only view a document when you explicitly request that they approve or sign a document.</p>
+            </aside>
+        </section>
+    </form>
+  </div>
+
+  <div class="modal-footer text-center">
+    <a class="btn btn-primary btn-submit" id="send-invite">Add Contact</a>
+  </div>
+</div>
+
+    <div data-tpl-template="dealer/add-company-form" class="dialog dialog-dealer-company">
+  <div class="modal-header">
+    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+    <h3>Add A New Company</h3>
+  </div>
+  <div class="modal-body">
+
+    <div class="messages"></div>
+
+    <form>
+        <div class="control-group" id="div_id_first_name">
+            <label for="first_name">Company Name</label>
+            <div class="controls">
+                <input type="text" required="" placeholder="Company" name="name" class="input-company">
+            </div>
+        </div>
+
+        
+
+    </form>
+  </div>
+
+  <div class="modal-footer text-center">
+    <a class="btn btn-primary btn-submit" id="send-invite">Add Company</a>
+  </div>
+</div>
+
+
+    <div data-tpl-template="dealer/workflow-step" class="workflow-step">
+  <div data-tpl-template="dealer/workflow-step-item" class="row workflow-item clearfix">
+    <div class="chiclet">
+      <div class="workflow-droptarget">
+        <div class="workflow-element-inner">
+          <p class="pictos workflow-element-name">Add a Step</p>
+        </div>
+      </div>
+    </div>
+    <div class="workflow-form">
+	    <div class="form-actions workflow-actions">
+	    </div>
+    </div>
+  </div>
+</div>
+    <div data-tpl-template="dealer/workflow-step-condensed" class="workflow-step-form workflow-step-condensed top-left-arrow">
+  <div class="workflow-step-condensed-inner">
+    <div class="workflow-step-summary">
+      <span class="workflow-object workflow-contact">I</span> 
+      <span data-bind-stepphrase="model.step_type">need the</span>
+     <span data-bind-default="something" data-bind-text="model.doc_name" class="workflow-object workflow-document">
+        something
+      </span>
+      <span data-bind-steptype="model.step_type" class="workflow-type">do something</span>
+      <span data-bind-show="model.responsible" data-bind-hide="model.responsible_list">
+        <span data-bind-notyou="model.responsible">
+          from
+          <a data-bind-default="someone" data-bind-person="model.responsible" class="link external workflow-object workflow-contact">someone</a>
+        </span>
+      </span>
+      <span data-bind-show="model.responsible_list" class="comma-list">
+        <span data-bind-show="model.responsible_list | greater_than_0">by</span>
+        <span data-bind-each-person="model.responsible_list" class="comma-list-item"><a data-bind-person="person" class="comma-list-item">Someone</a></span>
+      </span>
+      <span data-bind-show="model.deadline">by<span> <span data-bind-text="model.deadline | date" class="workflow-object workflow-date">sometime</span>
+    </span></span></div>
+    <div class="workflow-step-permissions">
+      <span class="comma-list">
+        <span data-bind-each-person="model.responsible_list" class="comma-list-item">
+          <a data-bind-person="person" class="comma-list-item">Someone</a>
+        </span>
+      </span>
+        <span data-bind-plural="model.responsible_list">needs</span> to verify progess when the above steps have been completed.
+    </div>
+  </div>
+</div>
+
+  </div></div>
+
+  </div>
+  <!-- /Content -->
+  </div>
+	</div>
+</div>
+
+		

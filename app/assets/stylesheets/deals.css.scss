@@ -1,0 +1,1045 @@
+// Place all the styles related to the Deals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.clearfix {
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
+.hide-text {
+    background-color: transparent;
+    border: 0 none;
+    color: transparent;
+    font: 0px/0 a;
+    text-shadow: none;
+}
+.input-block-level {
+    -moz-box-sizing: border-box;
+    display: block;
+    min-height: 50px;
+    width: 100%;
+}
+.tutorial-modal {
+    left: 38%;
+    top: 15%;
+    width: 870px;
+}
+.tutorial-modal .modal-header {
+    height: 20px;
+}
+.tutorial-modal .modal-body {
+    max-height: none;
+}
+.tutorial-modal .modal-footer {
+    text-align: center;
+}
+.tutorial-modal .modal-footer h1 {
+    color: #777777;
+}
+.blocking {
+    background: none repeat scroll 0 0 #E35C5C;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 39px;
+    margin: 7px 0 0 20px;
+    padding: 0 10px 0 12px;
+}
+.blocking .icon-blocking-warning-sign {
+    background: url("../components/bootstrap-glider/img/blocking-warning-sign.png") repeat scroll 0 0 transparent;
+    height: 21px;
+    line-height: 21px;
+    margin-right: 5px;
+    margin-top: -3px;
+    width: 23px;
+}
+.blocking .btn-blocking {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #E35C5C;
+    margin-top: 5px;
+}
+.blocking .icon-blocking-cog {
+    background: url("../components/bootstrap-glider/img/blocking-cog.png") repeat scroll 0 0 transparent;
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+}
+.blocking a {
+    color: #FFFFFF;
+}
+.status {
+    color: #9F9F9F;
+    line-height: 20px;
+}
+.status .graph {
+    background: none repeat scroll 0 0 #E7EDF1;
+    height: 12px;
+    width: 278px;
+}
+.status .graph .fill {
+    background: none repeat scroll 0 0 #60AADB;
+    height: 12px;
+}
+.status .graph .fill.done {
+    background: none repeat scroll 0 0 #62C462;
+}
+.status .graph.thin {
+    height: 4px;
+}
+.status .graph.thin .fill {
+    height: 4px;
+}
+.status .done {
+    color: #468847;
+}
+.status em, .status span {
+    font-size: 12px;
+    font-style: normal;
+}
+.status em {
+    float: left;
+}
+#deal-list {
+    padding-bottom: 60px;
+    position: relative;
+}
+#deal-list ul.activity-feed {
+    background: none repeat scroll 0 0 #F8FAFB;
+    border: 1px solid #E5E5E5;
+    margin-left: 20px;
+}
+#deal-list ul.activity-feed:before, #deal-list ul.activity-feed:after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    left: 30px;
+    margin-left: -15px;
+    position: absolute;
+    top: 0;
+}
+#deal-list ul.activity-feed:before {
+    border-bottom: 10px solid #D3D3D3;
+    margin-top: -10px;
+}
+#deal-list ul.activity-feed:after {
+    border-bottom: 10px solid #F8FAFB;
+    margin-top: -9px;
+    z-index: 1;
+}
+#deal-list ul.activity-feed .comment {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#deal-list .deal {
+    border-top: 1px solid #DBDBDB;
+    padding: 35px 25px 35px 0;
+}
+#deal-list .deal:first-child {
+    border-top: 0 none;
+    padding-top: 20px;
+}
+#deal-list .deal:last-child {
+    border-bottom: 1px solid #E5E5E5;
+}
+#deal-list .deal .status {
+    margin-top: 10px;
+}
+#deal-list .deal .deal-head {
+    line-height: 60px;
+    margin-left: 20px;
+    position: relative;
+}
+#deal-list .deal .deal-head .org_logo {
+    float: left;
+    margin-right: 13px;
+    padding: 0 5px;
+    text-align: center;
+    width: 45px;
+}
+#deal-list .deal .deal-head h1 {
+    float: left;
+    font-size: 26px;
+    line-height: 26px;
+}
+#deal-list .deal .deal-head h1 small {
+    display: block;
+    font-size: 14px;
+}
+#deal-list .deal .deal-head .archive {
+    line-height: 20px;
+}
+#deal-list .main-content-column {
+    border-right: 0 none;
+}
+#deal-list .sidebar-fill {
+    background: none repeat scroll 0 0 #FAFBFC;
+}
+.sidebar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    position: relative;
+}
+.sidebar .new-deal {
+    margin: 30px 0;
+    text-align: center;
+}
+.sidebar .company {
+    background: none repeat scroll 0 0 #FAFBFC;
+    border-top: 1px solid #E8EDF0;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+    padding: 5px 10px 5px 15px;
+}
+.sidebar .company:last-child {
+    border-bottom: 1px solid #E8EDF0;
+    box-shadow: 0 -1px 0 #FFFFFF inset, 0 1px 0 #FFFFFF inset;
+}
+.sidebar .company .details {
+    margin: 13px 0 0;
+    text-align: left;
+}
+.sidebar .company .company-logo {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.sidebar .company h4 {
+    color: #404040;
+    font-size: 16px;
+    margin: 0;
+}
+.sidebar .company h5 {
+    color: #898989;
+    font-size: 11px;
+    margin: 0;
+}
+.sidebar .company ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+}
+.sidebar .company ul li {
+    margin-bottom: 10px;
+}
+.sidebar .company ul li .status .graph {
+    width: 235px;
+}
+.sidebar .company ul li .status span {
+    font-size: 10px;
+    margin-top: -10px;
+}
+ul.activity-feed {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #F8FAFB #F8FAFB;
+    border-image: none;
+    border-right: 1px solid #F8FAFB;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    list-style-type: none;
+    margin: 10px 0 0;
+    position: relative;
+}
+ul.activity-feed li {
+    border-bottom: 1px solid #DFE1E1;
+    padding: 10px;
+}
+ul.activity-feed li:last-child {
+    border-bottom: 0 none;
+}
+ul.activity-feed li p {
+    float: left;
+    margin: 5px 0;
+}
+ul.activity-feed li .avatar {
+    float: left;
+    margin-right: 13px;
+}
+ul.activity-feed li .avatar img {
+    border-radius: 5px 5px 5px 5px;
+}
+ul.activity-feed li span {
+    font-size: 12px;
+    margin: 5px 0;
+}
+ul.activity-feed li .comment {
+    background-color: #F8FAFB;
+    border: 1px solid #E8EDF1;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 43px;
+    padding: 10px;
+}
+ul.activity-feed li .comment span {
+    margin: 0;
+}
+ul.activity-feed li .text {
+    line-height: 20px;
+}
+.no-deals {
+    font-size: 18px;
+    line-height: 40px;
+    margin: 60px auto;
+    text-align: center;
+    width: 500px;
+}
+#deal-list .arrow {
+    background: url("/static/img/builder_arrows.png") no-repeat scroll 50% 110% transparent;
+    height: 75px;
+    position: absolute;
+    right: 355px;
+    top: 40px;
+    transform: rotate(18deg);
+    width: 80px;
+}
+.deal-create-page h1 {
+    font-size: 42px;
+}
+.deal-create-page span.sub-heading {
+    color: #999999;
+    display: inline-block;
+    font-size: 17.5px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+#deal-builder .row {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+    padding-bottom: 30px;
+}
+#deal-builder .row:last-child {
+    border-bottom: 0 none;
+}
+#deal-builder .workflow-row {
+    min-height: 500px;
+    position: relative;
+}
+.deal-builder-sidebar {
+    margin-left: 0;
+    margin-top: 30px;
+    position: relative;
+}
+.deal-builder-sidebar h3 {
+    line-height: 30px;
+    margin: 0 0 0 30px;
+}
+.deal-builder-sidebar h4 {
+    color: #999999;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 5px 0 0 30px;
+    text-transform: uppercase;
+}
+.deal-builder-workflow {
+    margin-left: 20px;
+}
+.deal-builder-workflow .chiclet {
+    float: left;
+}
+.deal-builder-workflow .workflow-form {
+    float: left;
+    margin-left: 20px;
+    width: 610px;
+}
+.workflow-menu, .workflow-selection {
+    margin-bottom: 0;
+}
+.workflow-menu-bar {
+    position: relative;
+}
+.workflow-menu-bar .arrows {
+    background: url("/static/img/builder_arrows.png") no-repeat scroll 0 0 transparent;
+    height: 125px;
+    left: 120px;
+    position: absolute;
+    top: 70px;
+    width: 80px;
+}
+ul.workflow-menu {
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    width: 110px;
+}
+ul.workflow-menu .workflow-element {
+    cursor: move;
+}
+ul.workflow-menu .workflow-element.ui-state-disabled {
+    background-color: #999999;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.25) inset;
+    opacity: 0.25;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+ul.workflow-menu .workflow-element.ui-state-disabled .workflow-element-name {
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+ul.workflow-menu .draggable-hidden {
+    background-color: #999999;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.25) inset;
+    opacity: 0.25;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+ul.workflow-menu .draggable-hidden .workflow-element-name {
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+.workflow-element, .workflow-droptarget {
+    background-clip: padding-box;
+    border-radius: 3px 3px 3px 3px;
+    display: block;
+    height: 110px;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    width: 110px;
+}
+.workflow-element {
+    background-color: #60AADB;
+    box-shadow: 0 2px 0 #428FB5;
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+}
+.workflow-element .workflow-element-inner {
+    padding: 10px;
+}
+.workflow-element .workflow-element-icon {
+    color: #FFFFFF;
+    display: block;
+    font-size: 42px;
+    line-height: 42px;
+    margin: 10px auto 0;
+}
+.workflow-element .workflow-element-icon[data-icon]:before {
+    font-size: 50px;
+}
+.workflow-element .workflow-element-name {
+    color: #FFFFFF;
+    font-family: "proxima-nova-condensed","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+}
+.empty-item .workflow-droptarget .workflow-element-name {
+    margin-top: 35%;
+}
+.workflow-droptarget {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px dashed #999999;
+}
+.workflow-droptarget .workflow-element-name {
+    color: #999999;
+    font-family: "proxima-nova-condensed","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17.5px;
+    font-weight: 500;
+    margin-top: 40%;
+    vertical-align: middle;
+}
+.workflow-selection {
+    margin-top: 30px;
+}
+.workflow-selection .workflow-element {
+    background-color: #49D16F;
+    box-shadow: 0 2px 0 #2AA44C;
+    margin: 2px 2px 12px;
+}
+.workflow-selection .workflow-item:after {
+    color: #999999;
+    content: "⬇";
+    margin-left: 80px;
+    padding: 15px 0;
+}
+.workflow-selection .workflow-item:last-of-type:after {
+    content: "";
+}
+.workflow-selection .draggable-hidden {
+    opacity: 0.25;
+}
+.workflow-actions {
+    margin-top: 30px;
+    padding: 0;
+}
+.workflow-actions button.workflow-save.disabled {
+    background-color: #999999;
+    opacity: 0.25;
+}
+#deal-builder-form .deal-builder-name-controls {
+    padding-top: 30px;
+}
+#deal-builder-form .deal-builder-name-controls #deal_name {
+    margin-bottom: 0;
+}
+#deal-builder-form .deal-builder-name-controls .select2-container {
+    margin-bottom: 0;
+}
+#deal-builder-form .deal-builder-name-controls > span {
+    color: #999999;
+    float: left;
+    font-size: 16px;
+    line-height: 50px;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+#deal-builder-form .deal-builder-name-controls .btn-company {
+    margin-top: 5px;
+}
+.workflow-form .form-actions {
+    padding: 0;
+}
+.workflow-form.expanded input[type="text"], .workflow-form.expanded textarea {
+    width: 502px;
+}
+.workflow-form.expanded input#deadline {
+    width: 460px;
+}
+.workflow-form.expanded .select2-container {
+    width: 382px;
+}
+.workflow-form.expanded .input-date {
+    margin-bottom: 10px;
+}
+.workflow-form.expanded .workflow-step-approval .select2-container, .workflow-form.expanded .workflow-step-signature .select2-container {
+    width: 516px;
+}
+.workflow-form.expanded .workflow-step-approval .input-invite .select2-container, .workflow-form.expanded .workflow-step-signature .input-invite .select2-container {
+    width: 383px;
+}
+.workflow-form.expanded .workflow-step-create .doc-input input[type="text"] {
+    width: 312px;
+}
+.workflow-form.expanded .workflow-step-form {
+    display: block;
+}
+.workflow-form.expanded .workflow-step-form.workflow-step-condensed {
+    display: none;
+}
+.workflow-form.condensed .workflow-step-form {
+    display: none;
+}
+.workflow-form.condensed .workflow-step-form.workflow-step-condensed {
+    display: block;
+}
+.workflow-step-form {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #F8FAFB;
+    border-color: #E8EDF1;
+    border-image: none;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    margin-bottom: 43px;
+    max-width: 700px;
+}
+.workflow-step-form .workflow-object {
+    font-weight: bold;
+}
+.workflow-step-form label {
+    text-transform: uppercase;
+}
+.workflow-step-form input, .workflow-step-form select, .workflow-step-form textarea {
+    background-color: white;
+}
+.workflow-step-form.workflow-step-condensed {
+    height: 110px;
+    margin-bottom: 43px;
+    position: relative;
+}
+.workflow-step-form.workflow-step-condensed .workflow-step-condensed-inner {
+    display: table;
+    height: 100%;
+    padding: 20px 45px;
+    vertical-align: middle;
+}
+.workflow-step-form.workflow-step-condensed .workflow-step-condensed-inner .workflow-step-summary, .workflow-step-form.workflow-step-condensed .workflow-step-condensed-inner .workflow-step-permissions {
+    display: table-cell;
+    vertical-align: middle;
+}
+.workflow-step-form.workflow-step-condensed.top-left-arrow:before, .workflow-step-form.workflow-step-condensed.top-left-arrow:after {
+    top: 64px;
+}
+.workflow-step-form .title {
+    border-bottom: 1px solid #DFE6EC;
+    padding: 15px 10px 15px 46px;
+}
+.workflow-step-form .form_elements {
+    border-top: 1px solid #FFFFFF;
+    padding: 20px 46px 30px;
+}
+.workflow-step-form .delete {
+    font-weight: normal;
+}
+.top-left-arrow {
+    position: relative;
+}
+.top-left-arrow:before, .top-left-arrow:after {
+    border: medium solid transparent;
+    content: " ";
+    height: 0;
+    position: absolute;
+    right: 100%;
+    top: 50px;
+    width: 0;
+}
+.top-left-arrow:after {
+    border-right-color: #F8FAFB;
+    border-width: 15px;
+    margin-top: -24px;
+}
+.top-left-arrow:before {
+    border-right-color: #D8E3E8;
+    border-width: 17px 16px 17px 17px;
+    margin-top: -25px;
+}
+.templates, .tpl-templates {
+    display: none;
+}
+.doc-input input[type="text"] {
+    float: left;
+}
+.doc-input > span {
+    color: #999999;
+    float: left;
+    font-size: 16px;
+    line-height: 50px;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+.doc-input button {
+    float: left;
+    margin-top: 5px;
+    padding: 10px 15px;
+}
+#deal-detail {
+    position: relative;
+}
+#deal-detail span.timestamp {
+    color: #A7A7A7;
+    float: right;
+    font-size: 11px;
+    margin-right: 15px;
+    text-align: right;
+}
+#deal-detail .main-content-column .complete-deal {
+    background-color: #D9EDF7;
+    border: 1px solid #BCE8F1;
+    border-radius: 2px 2px 2px 2px;
+    color: #3A87AD;
+    line-height: 40px;
+    margin: 0 25px 25px;
+    padding: 0 10px;
+}
+#deal-detail .main-content-column .complete-deal form {
+    margin: 0;
+    padding: 0;
+}
+#deal-detail .main-content-column .complete-deal span.pictos {
+    padding-right: 5px;
+}
+#deal-detail .main-content-column .complete-deal [data-icon]:before {
+    font-size: 18px;
+    top: 2px;
+}
+#deal-detail .main-content-column .complete-deal button {
+    margin-top: 5px;
+}
+#deal-detail .main-content-column .main-steps ul {
+    list-style: none outside none;
+    margin-bottom: 0;
+}
+#deal-detail .main-content-column .main-steps ul li.workflow-item {
+    display: inline-block;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+#deal-detail .main-content-column .main-steps ul li.workflow-item .workflow-element.future {
+    background-color: #A1B3BB;
+    box-shadow: 0 2px 0 #707C81;
+}
+#deal-detail .main-content-column .main-steps ul li.workflow-item .workflow-element.done {
+    background-color: #4AD170;
+    box-shadow: 0 2px 0 #2AA44D;
+}
+#deal-detail .main-content-column .main-steps ul li.workflow-item .workflow-element.current {
+    background-color: #60AADB;
+    box-shadow: 0 2px 0 #428FB5;
+}
+#deal-detail .main-content-column .main-steps ul li.workflow-item .workflow-element.current:after, #deal-detail .main-content-column .main-steps ul li.workflow-item .workflow-element.current:before {
+    border: medium solid transparent;
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    width: 0;
+}
+#deal-detail .main-content-column .main-steps ul li.workflow-item .workflow-element.current:after {
+    border-color: #60AADB rgba(10, 173, 11, 0) rgba(10, 173, 11, 0);
+    border-width: 10px;
+    left: 50%;
+    margin-left: -10px;
+}
+#deal-detail .main-content-column .main-steps ul li.workflow-item .workflow-element.current:before {
+    border-color: #428FB5 rgba(66, 143, 181, 0) rgba(66, 143, 181, 0);
+    border-width: 13px;
+    left: 50%;
+    margin-left: -13px;
+}
+#deal-detail .main-content-column .main-steps ul li.separator {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+#deal-detail .main-content-column .main-steps ul li.separator[data-icon]:before {
+    color: #BEBEBE;
+    font-size: 24px;
+}
+#deal-detail .main-content-column .sub-steps {
+    background: none repeat scroll 0 0 #F8FAFB;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 2px 0 0 #D8DEE3;
+    margin: 15px 25px 25px;
+    position: relative;
+}
+#deal-detail .main-content-column .sub-steps ul {
+    list-style: none outside none;
+    margin: 0;
+}
+#deal-detail .main-content-column .sub-steps ul li {
+    border-color: #FFFFFF #E8EDF1 #DFE6EC;
+    border-style: solid;
+    border-width: 1px;
+    line-height: 50px;
+    padding-left: 15px;
+    position: relative;
+}
+#deal-detail .main-content-column .sub-steps ul li form textarea {
+    background-color: #FFFFFF;
+    max-height: 50px;
+    max-width: 484px;
+    resize: none;
+}
+#deal-detail .main-content-column .sub-steps ul li form span.pictos {
+    color: #60AADB;
+    font-size: 28px;
+    margin-right: 5px;
+}
+#deal-detail .main-content-column .sub-steps ul li form [data-icon]:before {
+    font-size: 28px;
+    top: 7px;
+}
+#deal-detail .main-content-column .sub-steps ul li p {
+    line-height: 24px;
+}
+#deal-detail .main-content-column .sub-steps ul li p span {
+    float: left;
+}
+#deal-detail .main-content-column .sub-steps ul li p span.pictos {
+    color: #60AADB;
+    font-size: 26px;
+    margin-right: 10px;
+}
+#deal-detail .main-content-column .sub-steps ul li p span em {
+    color: #60AADB;
+}
+#deal-detail .main-content-column .sub-steps ul li p [data-icon]:before {
+    font-size: 26px;
+    top: 2px;
+}
+#deal-detail .main-content-column .sub-steps ul li.current .status-icon {
+    border: 3px solid #60AADB;
+}
+#deal-detail .main-content-column .sub-steps ul li.done .status-icon {
+    background: none repeat scroll 0 0 #4AD170;
+    border: 3px solid #4AD170;
+}
+#deal-detail .main-content-column .sub-steps ul li.done .status-icon[data-icon]:before {
+    color: #FFFFFF;
+    left: 1px;
+    position: absolute;
+    top: -15px;
+}
+#deal-detail .main-content-column .sub-steps ul li .status-icon {
+    border: 3px solid #9BA8B3;
+    border-radius: 20px 20px 20px 20px;
+    display: inline-block;
+    height: 15px;
+    margin-right: 5px;
+    position: relative;
+    top: 0;
+    vertical-align: middle;
+    width: 15px;
+}
+#deal-detail .main-content-column .sub-steps ul li:last-child {
+    background-clip: padding-box;
+    border-bottom: 0 none;
+    border-radius: 0 0 7px 7px;
+}
+#deal-detail .main-content-column .sub-steps .due-date {
+    background: none repeat scroll 0 0 #60AADB;
+    border-bottom: 2px solid #428FB5;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #FFFFFF;
+    line-height: 50px;
+    text-align: center;
+}
+#deal-detail .main-content-column .activity-stream .activity {
+    border-bottom: 1px solid #F2F2F2;
+    line-height: 20px;
+    margin-left: 30px;
+    padding: 20px 15px 20px 0;
+}
+#deal-detail .sidebar h4 {
+    color: #777777;
+    font-family: "proxima-nova-condensed","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+#deal-detail .sidebar ul {
+    list-style: none outside none;
+    margin: 0;
+}
+#deal-detail .sidebar ul li {
+    border-top: 1px solid #F0F3F5;
+    padding: 8px 0 8px 15px;
+}
+#deal-detail .sidebar ul li:nth-child(2n+1) {
+    background-color: #FCFDFD;
+}
+#deal-detail .sidebar ul li:last-child {
+    border-bottom: 1px solid #F0F3F5;
+}
+#deal-detail .sidebar .files, #deal-detail .sidebar .people {
+    color: #777777;
+    font-size: 12px;
+}
+#deal-detail .sidebar .files h4 {
+    display: inline-block;
+    vertical-align: middle;
+}
+#deal-detail .sidebar .files a.btn {
+    margin-left: 65px;
+}
+#deal-detail .sidebar .files li {
+    padding: 8px 0 8px 20px;
+}
+#deal-detail .sidebar .files li[data-icon]:before {
+    left: -5px;
+    top: 2px;
+}
+#deal-detail .sidebar .people {
+    margin-top: 100px;
+}
+#deal-detail .sidebar .avatar img {
+    border-radius: 5px 5px 5px 5px;
+    margin-right: 8px;
+}
+#deal-detail .blocking {
+    margin: 0;
+}
+.comment-form {
+    background: none repeat scroll 0 0 #F8FAFB;
+    border-bottom: 1px solid #E6ECEF;
+    border-top: 1px solid #E6ECEF;
+    padding: 20px 12px;
+}
+.comment-form .avatar img {
+    border-radius: 5px 5px 5px 5px;
+    margin-right: 8px;
+}
+.comment-form textarea {
+    background: none repeat scroll 0 0 padding-box #FFFFFF;
+    border: 1px solid #EDF1F3;
+    border-radius: 3px 3px 3px 3px;
+    line-height: 19px;
+    margin: 0 10px 0 0;
+    min-width: 465px;
+    padding: 12px;
+}
+.comment-form .btn.btn-large {
+    float: right;
+    margin-top: 1px;
+}
+#dashboard {
+    text-align: center;
+}
+#dashboard .tooltip-inner {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+}
+#dashboard .tooltip-inner span {
+    font-size: 14px;
+    line-height: 16px;
+}
+#dashboard .tooltip-inner span.count {
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+}
+#dashboard .tooltip.top .tooltip-arrow {
+    border-top-color: rgba(0, 0, 0, 0.6);
+}
+#dashboard [class*="span"] {
+    border-bottom: 1px solid #E0E0E0;
+    margin-left: 0;
+    min-height: 350px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+#dashboard .row [class*="span"]:first-child {
+    margin-left: 30px;
+    padding-left: 0;
+}
+#dashboard .open-deals {
+    border-right: 1px solid #E0E0E0;
+    width: 269px;
+}
+#dashboard .open-deals .pictos {
+    background-clip: padding-box;
+    border: 3px solid #43708D;
+    border-radius: 50% 50% 50% 50%;
+    display: block;
+    height: 50px;
+    margin: 50px auto 0;
+    width: 50px;
+}
+#dashboard .open-deals [data-icon]:before {
+    color: #43708D;
+    font-size: 40px;
+    top: 20px;
+}
+#dashboard .open-deals em {
+    color: #535C62;
+    display: block;
+    font-size: 75px;
+    font-style: normal;
+    line-height: 50px;
+    margin-top: 20px;
+}
+#dashboard .open-deals span {
+    color: #757D82;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+#dashboard .open-deals a {
+    margin-top: 20px;
+}
+#dashboard .percents {
+    border-left: 1px solid #E0E0E0;
+    width: 269px;
+}
+#dashboard .percents .wheel {
+    height: 120px;
+    margin: 0 auto;
+    padding: 70px 0 10px;
+    width: 120px;
+}
+#dashboard .percents .wheel .progress-meter .background {
+    fill: #E7E7E7;
+}
+#dashboard .percents .wheel .progress-meter .foreground {
+    fill: #4AD170;
+}
+#dashboard .percents .wheel .progress-meter text {
+    fill: #535C62;
+    font-family: "proxima-nova-condensed";
+    font-size: 35px;
+    font-weight: bold;
+}
+#dashboard .percents span {
+    color: #757D82;
+    text-transform: uppercase;
+}
+#dashboard .deals-day {
+    background: none repeat scroll 0 0 #F6F8FA;
+    border-right: 1px solid #E0E0E0;
+    width: 569px;
+}
+#dashboard .deals-day .pictos {
+    display: block;
+    height: 50px;
+    margin: 20px auto 0;
+    width: 50px;
+}
+#dashboard .deals-day [data-icon]:before {
+    color: #4AD170;
+    font-size: 70px;
+    top: 20px;
+}
+#dashboard .deals-day em {
+    color: #535C62;
+    display: block;
+    font-family: "proxima-nova-condensed";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 20px auto 10px;
+}
+#dashboard .deals-day span {
+    color: #757D82;
+    text-transform: uppercase;
+}
+#dashboard .deals-day .graph {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+#dashboard .deals-day .graph svg {
+    border-bottom: 2px solid #BEC1BF;
+    border-left: 1px solid #BEC1BF;
+}
+#dashboard .deals-day .graph .dot {
+    fill: #4AD170;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+}
+#dashboard .deals-day .graph .dot:hover {
+    cursor: pointer;
+}
+#dashboard .deals-day .graph .line {
+    fill: none;
+    stroke: #4AD170;
+}
+#dashboard .deals-month {
+    background: none repeat scroll 0 0 #F6F8FA;
+}
+#dashboard .deals-month .pictos {
+    display: block;
+    height: 50px;
+    margin: 20px auto 0;
+    width: 50px;
+}
+#dashboard .deals-month [data-icon]:before {
+    color: #60AADB;
+    font-size: 75px;
+    top: 20px;
+}
+#dashboard .deals-month em {
+    color: #535C62;
+    display: block;
+    font-family: "proxima-nova-condensed";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 20px auto 10px;
+    text-transform: uppercase;
+}
+#dashboard .deals-month span {
+    color: #757D82;
+    text-transform: uppercase;
+}
+#dashboard .deals-month span.caption {
+    color: #535C62;
+}
+#dashboard .deals-month .bar {
+    fill: #60AADB;
+}
+#dashboard .deals-month .bar:hover {
+    cursor: pointer;
+    fill: #4B80A3;
+}

@@ -1,0 +1,52 @@
+JS
+---
+
+1. Bootstrap - http://getbootstrap.com
+2. Carousel - http://wil.to/3a 
+3. Flexslider - http://www.woothemes.com/flexslider/
+4. jQuery - http://jquery.com/
+5. jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+6. jQuery Transit - http://ricostacruz.com/jquery.transit
+7. fancyBox - http://fancyapps.com/fancybox/
+8. jQuery gMap - http://github.com/marioestrada/jQuery-gMap
+9. jQuery imagesLoaded plugin - http://github.com/desandro/imagesloaded
+10. Isotope - http://isotope.metafizzy.co
+11. jQUery Placeholder - http://mths.be/placeholder
+12. LayerSlider - http://kreaturamedia.com/
+13. Modernizr - http://modernizr.com/
+
+PSD
+---
+
+1. iPhone Black - http://www.pixeden.com/psd-mock-up-templates/iphone-5-psd-vector-mockup
+2. iPhone White Landscape - http://www.pixeden.com/psd-mock-up-templates/iphone-5-psd-landscape-mockup
+3. iPad Black - http://www.pixeden.com/psd-mock-up-templates/psd-ipad-retina-mockup-template
+4. iPad White - http://www.pixeden.com/psd-mock-up-templates/psd-ipad-retina-mockup-template
+5. MacBook Pro - http://www.pixeden.com/psd-mock-up-templates/macbook-pro-retina-psd-mockup
+
+Icons
+---
+
+1. Glyphicons - http://glyphicons.com/
+2. Font Awesome - http://fortawesome.github.io/Font-Awesome/
+3. Linecons - http://designmodo.com/linecons-free/
+
+Images
+---
+
+1. Smiling Young Business Man - http://photodune.net/item/smiling-young-business-man/216592 (Photodune Extended Licence)
+2. Celebrating success - http://photodune.net/item/celebrating-success/658118 (Photodune Extended Licence)
+3. Business woman texting with team in background - http://photodune.net/item/business-woman-texting-with-team-in-background/658738 (Photodune Extended Licence)
+4. Smiling Cute Business Woman With Colleagues At The Back - http://photodune.net/item/smiling-cute-business-woman-with-colleagues-at-the-back/202687 (Photodune Extended Licence)
+5. 1.jpg http://500px.com/photo/27210231
+6. 2.jpg http://500px.com/photo/13328017
+7. 3.jpg http://500px.com/photo/19195397
+8. 4.jpg http://500px.com/photo/19626033
+9. 5.jpg http://500px.com/photo/22467961
+10. 6.jpg http://500px.com/photo/22850977
+11. 7.jpg http://500px.com/photo/20452853
+12. 8.jpg http://500px.com/photo/14561569
+13. 9.jpg http://500px.com/photo/16810873
+14. 10.jpg http://500px.com/photo/23934083
+15. 11.jpg http://500px.com/photo/3106929
+16. 12.jpg http://500px.com/photo/26051935
