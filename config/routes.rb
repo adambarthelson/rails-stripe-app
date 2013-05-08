@@ -2,9 +2,10 @@ RailsStripeApp::Application.routes.draw do
 
   match '/new',     to: 'deals#new_deal'
 
-  match '/about',         to: 'static_pages#about'
-  match '/contact',       to: 'static_pages#contact'
-  match '/help',          to: 'static_pages#help'
+  match '/about',   to: 'static_pages#about'
+  match '/contact', to: 'static_pages#contact'
+  match '/help',    to: 'static_pages#help'
+  match '/pricing',    to: 'static_pages#pricing'
 
   mount StripeEvent::Engine => '/stripe'
   get "content/gold"
