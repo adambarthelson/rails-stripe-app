@@ -9,12 +9,14 @@ end
 
 group :development do
   gem 'sqlite3'
+  gem 'annotate', '2.5.0'
 end
 
 group :production do
   gem 'mysql2'
 end
 
+gem 'pg'
 gem 'filepicker-rails'
 gem 'jquery-rails'
 gem "rspec-rails", ">= 2.12.2", :group => [:development, :test]
